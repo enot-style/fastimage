@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kotylevskiy/fastimage"
+	"github.com/enot-style/fastimage"
 )
 
 func main() {

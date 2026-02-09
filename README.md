@@ -1,7 +1,7 @@
 # fastimage - fast image info for go
-[![Go Reference](https://pkg.go.dev/badge/github.com/kotylevskiy/fastimage.svg)](https://pkg.go.dev/github.com/kotylevskiy/fastimage) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/kotylevskiy/fastimage)](https://goreportcard.com/report/github.com/kotylevskiy/fastimage)
-[![License](https://img.shields.io/github/license/kotylevskiy/go-sitemap-fetcher)](LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/enot-style/fastimage.svg)](https://pkg.go.dev/github.com/enot-style/fastimage) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/enot-style/fastimage)](https://goreportcard.com/report/github.com/enot-style/fastimage)
+[![License](https://img.shields.io/github/license/enot-style/fastimage)](LICENSE)
 
 fastimage is a tiny Go helper that sniffs image headers to extract dimensions without
 fully decoding the file, keeping it lightweight and suitable for hot paths like upload
@@ -39,12 +39,12 @@ Big thanks and deep respect to [@rubenfonseca](https://github.com/rubenfonseca),
 Library (modules will fetch it automatically when you import):
 
 ```go
-import "github.com/kotylevskiy/fastimage"
+import "github.com/enot-style/fastimage"
 ```
 CLI:
 
 ```bash
-go install github.com/kotylevskiy/fastimage/cmd/fastimage@latest
+go install github.com/enot-style/fastimage/cmd/fastimage@latest
 ```
 
 ### Getting Started
@@ -55,7 +55,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/kotylevskiy/fastimage"
+	"github.com/enot-style/fastimage"
 )
 
 var data = []byte("RIFF,-\x00\x00WEBPVP8X\n\x00\x00\x00" +
@@ -124,7 +124,7 @@ results := fastimage.GetHTTPImageDataWithOptions(context.Background(), urls, opt
 
 ### Command Tool
 ```bash
-$ go get github.com/kotylevskiy/fastimage/cmd/fastimage
+$ go get github.com/enot-style/fastimage/cmd/fastimage
 $ fastimage banner.png
 png image/png 320 50
 $ fastimage https://example.com/banner.png
