@@ -1,3 +1,3 @@
-module github.com/kotylevskiy/fastimage
+module github.com/enot-style/fastimage
 
 go 1.25
